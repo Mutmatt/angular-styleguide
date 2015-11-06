@@ -2725,7 +2725,7 @@ Unit testing helps maintain clean code, as such I included some of my recommenda
         "requireOperatorBeforeLineBreak": true,
         "requireCamelCaseOrUpperCaseIdentifiers": true,
         "maximumLineLength": {
-          "value": 100,
+          "value": 120,
           "allowComments": true,
           "allowRegex": true
         },
