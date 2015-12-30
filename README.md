@@ -2734,17 +2734,19 @@ Unit testing helps maintain clean code, as such I included some of my recommenda
 
 	  "browser": true,
 	  "node": true,
+	  "jasmine": true,
+	  "jquery": true,
+	  "devel":  false,
 
 	  "globals": {
 		"angular": false,
-		"$": false,
-		"jQuery": false,
 		"Hallmark": false,
-		"confirm": false,
 		"Modernizr": false,
+		"confirm": false,
 		"_": false,
 		"ga": false,
-		"jasmine": true
+		"module": false,
+		"inject": false
 	  }
 	}
     ```
