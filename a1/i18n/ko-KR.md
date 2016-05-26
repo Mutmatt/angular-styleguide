@@ -11,7 +11,7 @@ Angular 팀의 리더인 Igor Minar 에게 특별히 감사합니다. 이 스타
 이 스타일 가이드의 목적은 Angular 어플리케이션을 만드는 길잡이 역할을 하기 위함이며 더 나아가 왜 내가 이런 것들을 선택했는지 보여주기 위함입니다.
 >만약 이 가이드가 마음에 든다면 Pluralsight 에 올려놓은 저의 강의를 참고하시기 바랍니다. [Angular Patterns: Clean Code](http://jpapa.me/ngclean)
 
-  [![Angular Patterns: Clean Code](https://raw.githubusercontent.com/johnpapa/angular-styleguide/master/assets/ng-clean-code-banner.png)](http://jpapa.me/ngclean)
+  [![Angular Patterns: Clean Code](https://raw.githubusercontent.com/johnpapa/angular-styleguide/master/a1/assets/ng-clean-code-banner.png)](http://jpapa.me/ngclean)
 
 ## Community Awesomeness and Credit
 저는 Angular 커뮤니티의 대단함을 알게 되었습니다. 그들은 자신들의 경험을 공유하는데 열정적이기 때문입니다. 나의 친구이자 Angular 전문가인 Todd Motto 와 나는 많은 스타일과 컨벤션을 위해 공동작업을 하였습니다. 대부분 우리는 서로 동의하였지만 어떤 부분에서는 의견이 갈렸습니다. Todd의 접근방법이 궁금하고 이를 비교해보고 싶으신 분들은 다음 링크에 가서 확인해보시면 좋을 것 같습니다 [Todd's guidelines](https://github.com/toddmotto/angularjs-styleguide).
@@ -472,7 +472,7 @@ Angular 팀의 리더인 Igor Minar 에게 특별히 감사합니다. 이 스타
   }
   ```
 
-    !["Above the Fold"를 사용하는 컨트롤러](https://raw.githubusercontent.com/johnpapa/angular-styleguide/master/assets/above-the-fold-1.png)
+    !["Above the Fold"를 사용하는 컨트롤러](https://raw.githubusercontent.com/johnpapa/angular-styleguide/master/a1/assets/above-the-fold-1.png)
 
   주의: 만약 코드 가독성에 영향을 주지않고 1줄이라면 그냥 위쪽에 두어도 됩니다.
 
@@ -817,7 +817,7 @@ Angular 팀의 리더인 Igor Minar 에게 특별히 감사합니다. 이 스타
 
   호스트 오브젝트 내에서 이런 식의 바인딩이 반영이 되어서, 원시 값들은 모듈 패턴 노출 방식으로 업데이트 되지 않습니다.
 
-    ![Factories Using "Above the Fold"](https://raw.githubusercontent.com/johnpapa/angular-styleguide/master/assets/above-the-fold-2.png)
+    ![Factories Using "Above the Fold"](https://raw.githubusercontent.com/johnpapa/angular-styleguide/master/a1/assets/above-the-fold-2.png)
 
 ### Function Declarations to Hide Implementation Details
 ###### [Style [Y053](#style-y053)]
@@ -2234,7 +2234,7 @@ Angular 팀의 리더인 Igor Minar 에게 특별히 감사합니다. 이 스타
             session-detail.controller.js
     ```
 
-      ![심플한 앱 구조](https://raw.githubusercontent.com/johnpapa/angular-styleguide/master/assets/modularity-2.png)
+      ![심플한 앱 구조](https://raw.githubusercontent.com/johnpapa/angular-styleguide/master/a1/assets/modularity-2.png)
 
       주의: 타입별로 묶어서 폴더를 만드는 식으로 앱 구조를 만들지 마세요. 한 가지 기능에 대해서 일하려면 여러 폴더를 옮겨 다녀야 합니다. 이는 앱이 5, 10 또는 25 이상의 뷰와 컨트롤러(또는 다른 기능들)를 갖게되면 기능으로 나뉜 폴더일 경우보다 금방 거추장스러워 집니다.
 
@@ -2329,7 +2329,7 @@ Angular 팀의 리더인 Igor Minar 에게 특별히 감사합니다. 이 스타
 
   - 어플리케이션의 루트 모듈은 앱 특화된 기능모듈 그리고 재사용되고 공유된 모듈들에 의존하게 됩니다.
 
-    ![모듈화 그리고 의존성](https://raw.githubusercontent.com/johnpapa/angular-styleguide/master/assets/modularity-1.png)
+    ![모듈화 그리고 의존성](https://raw.githubusercontent.com/johnpapa/angular-styleguide/master/a1/assets/modularity-1.png)
 
     *이유*: 주요 앱 모듈은 어플리케이션의 기능들을 빠르게 구분할 수 있는 목록을 가지고 있습니다.
 
@@ -2562,7 +2562,7 @@ Angular 팀의 리더인 Igor Minar 에게 특별히 감사합니다. 이 스타
     "mocha": true,
     ```
 
-  ![테스팅 도구들](https://raw.githubusercontent.com/johnpapa/angular-styleguide/master/assets/testing-tools.png)
+  ![테스팅 도구들](https://raw.githubusercontent.com/johnpapa/angular-styleguide/master/a1/assets/testing-tools.png)
 
 
 ### Organizing Tests
@@ -2897,7 +2897,6 @@ Angular 팀의 리더인 Igor Minar 에게 특별히 감사합니다. 이 스타
 **[Back to top](#table-of-contents)**
 
 ## File Templates and Snippets
-Use file templates or snippets to help follow consistent styles and patterns. Here are templates and/or snippets for some of the web development editors and IDEs.
 파일 템플릿이나 스니펫을 사용하면 일관적인 스타일과 패턴을 지킬수 있습니다. 웹 개발용 에디터와 IDE들에서 사용 가능한 템플릿과 스니펫을 알려 드리겠습니다.
 
 ### Sublime Text

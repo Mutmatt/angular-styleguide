@@ -12,7 +12,7 @@
 
 >如果你喜欢这个规范，请在Pluralsight看看[Angular Patterns: Clean Code](http://jpapa.me/ngclean)。
 
-  [![Angular Patterns: Clean Code](https://raw.githubusercontent.com/johnpapa/angular-styleguide/master/assets/ng-clean-code-banner.png)](http://jpapa.me/ngclean)
+  [![Angular Patterns: Clean Code](https://raw.githubusercontent.com/johnpapa/angular-styleguide/master/a1/assets/ng-clean-code-banner.png)](http://jpapa.me/ngclean)
 
 ## Community Awesomeness and Credit
 Angular社区是一个热衷于分享经验的令人难以置信的社区，尽管Todd Motto（他是我的一个朋友，也是Angular专家）和我合作了多种规范和惯例，但是我们也存在着一些分歧。我鼓励你去看看[Todd的指南](https://github.com/toddmotto/angularjs-styleguide)，在那里你能看到我们之间的区别。
@@ -39,7 +39,7 @@ Angular社区是一个热衷于分享经验的令人难以置信的社区，尽�
   1. [压缩和注释](#压缩和注释)
   1. [异常处理](#异常处理)
   1. [命名](#命名)
-  1. [应用程序结构LIFT原则](#应用程序结构lift原则)
+  1. [应用程序结构的LIFT准则](#应用程序结构的lift准则)
   1. [应用程序结构](#应用程序结构)
   1. [模块化](#模块化)
   1. [启动逻辑](#启动逻辑)
@@ -387,14 +387,14 @@ Angular社区是一个热衷于分享经验的令人难以置信的社区，尽�
       });
   }
   ```
- 
+
 ###置顶绑定成员
 
 ###### [Style [Y033](#style-y033)]
 
   - 把可绑定的成员放到controller的顶部，按字母排序，并且不要通过controller的代码传播。
 
-  *为什么？*：虽然设置单行匿名函数很容易，但是当这些函数的代码超过一行时，这将极大降低代码的可读性。在可绑定成员下面定义函数（这些函数被提出来），把具体的实现细节放到下面，可绑定成员置顶，这会提高代码的可读性。 
+  *为什么？*：虽然设置单行匿名函数很容易，但是当这些函数的代码超过一行时，这将极大降低代码的可读性。在可绑定成员下面定义函数（这些函数被提出来），把具体的实现细节放到下面，可绑定成员置顶，这会提高代码的可读性。
 
   ```javascript
   /* avoid */
@@ -440,7 +440,7 @@ Angular社区是一个热衷于分享经验的令人难以置信的社区，尽�
       }
   ```
 
-  ![Controller Using "Above the Fold"](https://raw.githubusercontent.com/johnpapa/angular-styleguide/master/assets/above-the-fold-1.png)
+  ![Controller Using "Above the Fold"](https://raw.githubusercontent.com/johnpapa/angular-styleguide/master/a1/assets/above-the-fold-1.png)
 
   注：如果一个函数就是一行，那么只要不影响可读性就把它放到顶部。
 
@@ -480,7 +480,7 @@ Angular社区是一个热衷于分享经验的令人难以置信的社区，尽�
 ###### [Style [Y034](#style-y034)]
 
   - 使用函数声明来隐藏实现细节，置顶绑定成员，当你需要在controller中绑定一个函数时，把它指向一个在文件的后面会出现函数声明。更多详情请看[这里](http://www.johnpapa.net/angular-function-declarations-function-expressions-and-readable-code)。
-    
+
   *为什么？*：易读，易识别哪些成员可以在View中绑定和使用。
 
   *为什么？*：把函数的实现细节放到后面，你可以更清楚地看到重要的东西。
@@ -783,7 +783,7 @@ Angular社区是一个热衷于分享经验的令人难以置信的社区，尽�
 
   这种绑定方式复制了宿主对象，原始值不会随着暴露模块模式的使用而更新。
 
-  ![Factories Using "Above the Fold"](https://raw.githubusercontent.com/johnpapa/angular-styleguide/master/assets/above-the-fold-2.png)
+  ![Factories Using "Above the Fold"](https://raw.githubusercontent.com/johnpapa/angular-styleguide/master/a1/assets/above-the-fold-2.png)
 
 ###函数声明隐藏实现细节
 ###### [Style [Y053](#style-y053)]
@@ -1020,7 +1020,7 @@ Angular社区是一个热衷于分享经验的令人难以置信的社区，尽�
 
     *为什么？*：一个文件一个directive也更加容易维护。
 
-    > 注： "**最佳实践**：Angular文档中有提过，directive应该自动回收，当directive被移除后，你可以使用`element.on('$destroy', ...)`或者`scope.$on('$destroy', ...)`来执行一个clearn-up函数。"
+    > 注： "**最佳实践**：Angular文档中有提过，directive应该自动回收，当directive被移除后，你可以使用`element.on('$destroy', ...)`或者`scope.$on('$destroy', ...)`来执行一个clean-up函数。"
 
   ```javascript
   /* avoid */
@@ -2170,7 +2170,7 @@ Angular社区是一个热衷于分享经验的令人难以置信的社区，尽�
             session-detail.controller.js
     ```
 
-    ![实例App结构](https://raw.githubusercontent.com/johnpapa/angular-styleguide/master/assets/modularity-2.png)
+    ![实例App结构](https://raw.githubusercontent.com/johnpapa/angular-styleguide/master/a1/assets/modularity-2.png)
 
     注意：不要使用按类型划分文件夹结构，因为如果这样的话，当做一个功能时，需要在多个文件夹中来回切换。当应用程序有5个、10个，甚至是25个以上的view、controller（或其他feature）时，这种方式将迅速变得不实用，这就使得它定位文件比按功能分文件夹的方式要困难的多。
 
@@ -2264,7 +2264,7 @@ Angular社区是一个热衷于分享经验的令人难以置信的社区，尽�
 
   - 应用程序根模块依赖于应用程序特定的功能模块、共享的和可复用的模块。
 
-    ![模块化和依赖](https://raw.githubusercontent.com/johnpapa/angular-styleguide/master/assets/modularity-1.png)
+    ![模块化和依赖](https://raw.githubusercontent.com/johnpapa/angular-styleguide/master/a1/assets/modularity-1.png)
 
     *为什么？*：主程序模块包含一个能快速识别应用程序功能的清单。
 
@@ -2450,12 +2450,12 @@ Angular社区是一个热衷于分享经验的令人难以置信的社区，尽�
     "mocha": true,
     ```
 
-  ![测试工具](https://raw.githubusercontent.com/johnpapa/angular-styleguide/master/assets/testing-tools.png)
+  ![测试工具](https://raw.githubusercontent.com/johnpapa/angular-styleguide/master/a1/assets/testing-tools.png)
 
 ### 组织测试
 ###### [Style [Y197](#style-y197)]
 
-  - 把单元测试的文件放到一个独立的`tests`文件夹中，它和你的客户端代码并列。
+  - 将单元测试文件(specs)同被测试客户端代码并列放在同一个文件夹下，将多个组件共用的测试文件以及服务器集成测试的文件放到一个单独的`tests`文件夹下。
 
     *为什么？*：单元测试和源代码中的每一个组件和文件都有直接的相关性。
 
@@ -3023,7 +3023,7 @@ Angular社区是一个热衷于分享经验的令人难以置信的社区，尽�
 **[返回顶部](#目录)**
 
 ## 任务自动化
-用[Gulp](http://gulpjs.com)或者[Grunt](http://gruntjs.com)来创建自动化任务。Gulp偏向于代码在配置之上，Grunt更倾向于配置高于代码。我更倾向于使用gulp，因为gulp写起来比较简单。
+用[Gulp](http://gulpjs.com)或者[Grunt](http://gruntjs.com)来创建自动化任务。Gulp偏向于代码优先原则(code over configuration)而Grunt更倾向于配置优先原则(configuration over code)。我更倾向于使用gulp，因为gulp写起来比较简单。
 
 > 可以在我的[Gulp Pluralsight course](http://jpapa.me/gulpps)了解更多gulp和自动化任务的信息
 
@@ -3071,7 +3071,7 @@ Angular社区是一个热衷于分享经验的令人难以置信的社区，尽�
     2. 拉取一个pull request，引用这个问题，解释你做的修改和为什么要这样做。
     3. pull request将会被进行评估，结果就是合并或是拒绝。
 
-## 许可证
+## 许可
 
   - **tldr;** 如果可以的话，使用本规范的时候还是指明归属吧。
 
