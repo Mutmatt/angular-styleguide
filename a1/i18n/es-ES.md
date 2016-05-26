@@ -8,7 +8,7 @@ El propósito de esta guía de estilos es proporcionar una guía de cómo constr
 
 >Si te gusta esta guía, echa un vistazo al curso de Pluralsight [Angular Patterns: Clean Code](http://jpapa.me/ngclean).
 
-  [![Angular Patterns: Clean Code](https://raw.githubusercontent.com/johnpapa/angularjs-styleguide/master/assets/ng-clean-code-banner.png)](http://jpapa.me/ngclean)
+  [![Angular Patterns: Clean Code](https://raw.githubusercontent.com/johnpapa/angularjs-styleguide/master/a1/assets/ng-clean-code-banner.png)](http://jpapa.me/ngclean)
 
 ## Asombrosa comunidad y créditos
 Nunca trabajes solo. Personalmente, la comunidad de Angular es un increíble grupo apasionado por compartir experiencias. Como por ejemplo, mi amigo y experto en Angular Todd Motto, con el que he colaborado en muchos de los estilos y convenciones. Estamos de acuerdo en la mayoría, y en otras no. Te recomiendo que le eches un vistazo a [Todd's guidelines](https://github.com/toddmotto/angularjs-styleguide) para que le des sentido a esta guía y la compares.
@@ -23,8 +23,7 @@ Mientras que esta guía explica el *qué*, *por qué* y *cómo*, me resulta úti
 
 ## Tabla de contenidos
 
-  1. [Responsabilidad
-     Única](#single-responsibility-o-responsabilidad-única)
+  1. [Responsabilidad Única](#single-responsibility-o-responsabilidad-Única)
   1. [IIFE](#iife)
   1. [Módulos](#módulos)
   1. [Controladores](#controladores)
@@ -61,6 +60,12 @@ Mientras que esta guía explica el *qué*, *por qué* y *cómo*, me resulta úti
 ###### [Style [Y001](#style-y001)]
 
   - Define 1 componente por archivo.
+    
+    *¿Por qué?*: Un componente por archivo promueve pruebas unitarias más fáciles.
+
+    *¿Por qué?*: Un componente por archivo hace que sea mucho más fácil de leer, mantener, y evita colisiones con los equipos en el control de código.
+
+    *¿Por qué?*: Un componente por archivo evita errores ocultos que a menudo surgen cuando se combinan componentes en un archivo donde pueden compartir variables, crear closures (clausuras) no deseadas, o acoplamiento indeseado de dependencias.
 
   El siguiente ejemplo define el módulo `app` y sus dependencias, define un controlador, y defines una fábrica todo en el mismo archivo.
 
@@ -441,7 +446,7 @@ Mientras que esta guía explica el *qué*, *por qué* y *cómo*, me resulta úti
       }
   ```
 
-    ![Controller Using "Above the Fold"](https://raw.githubusercontent.com/johnpapa/angularjs-styleguide/master/assets/above-the-fold-1.png)
+    ![Controller Using "Above the Fold"](https://raw.githubusercontent.com/johnpapa/angular-styleguide/master/a1/assets/above-the-fold-1.png)
 
   Nota: Si la función es de una línea, déjala arriba, siempre y cuando no afecte en la legibilidad.
 
@@ -784,7 +789,7 @@ Mientras que esta guía explica el *qué*, *por qué* y *cómo*, me resulta úti
 
   De esta forma se asocian los bindeos desde el objeto que lo mantiene, los valores primitivos no se pueden modificar por si solos usando este patrón
 
-    ![Fábricas Usando "Above the Fold"](https://raw.githubusercontent.com/johnpapa/angularjs-styleguide/master/assets/above-the-fold-2.png)
+    ![Fábricas Usando "Above the Fold"](https://raw.githubusercontent.com/johnpapa/angular-styleguide/master/a1/assets/above-the-fold-2.png)
 
 ### Declaración de Funciones para Esconder los Detalles de Implementación
 ###### [Style [Y053](#style-y053)]
@@ -793,9 +798,9 @@ Mientras que esta guía explica el *qué*, *por qué* y *cómo*, me resulta úti
 
     *¿Por qué?*: Coloca los elementos accesibles en la parte superior para hacerlo más fácil de leer y ayudarte a identificar instantáneamente qué funciones de la fábrica se pueden accesar externamente.
 
-    *¿Por qué?*: Colocar los detalles de implementación de una función al final del archivo mueve esa complegidad fuera de la vista, de esta forma puedes dejar lo importante arriba.
+    *¿Por qué?*: Colocar los detalles de implementación de una función al final del archivo mueve esa complejidad fuera de la vista, de esta forma puedes dejar lo importante arriba.
 
-    *¿Por qué?*: Las declaraciones de las funciones son "elevedas" de esta forma no hay problemas en usar una función antes de su definición (como la habría si fueran funciones en forma de expresión).
+    *¿Por qué?*: Las declaraciones de las funciones son "elevadas" de esta forma no hay problemas en usar una función antes de su definición (como la habría si fueran funciones en forma de expresión).
 
     *¿Por qué?*: No tendrás que preocuparte de que si pones `var a` antes de `var b` se rompa el código porque `a` dependa de `b`.
 
@@ -2160,7 +2165,7 @@ Mientras que esta guía explica el *qué*, *por qué* y *cómo*, me resulta úti
             session-detail.controller.js
     ```
 
-      ![Sample App Structure](https://raw.githubusercontent.com/johnpapa/angularjs-styleguide/master/assets/modularity-2.png)
+      ![Sample App Structure](https://raw.githubusercontent.com/johnpapa/angular-styleguide/master/a1/assets/modularity-2.png)
 
       Nota: No estructures tu aplicación usando directorios-por-tipo. Esto requiere mover múltiples directorios cuando se está trabajando en una característica y se vuelve difícil de manejar conforme la aplicación crece a 5, 10 o 25+ vistas y controladores (y otras características), lo que lo hace más difícil que localizar archivos en una aplicación estructura en directorios-por-característica.
 
@@ -2253,7 +2258,7 @@ Mientras que esta guía explica el *qué*, *por qué* y *cómo*, me resulta úti
 
   - El módulo raíz de la aplicación depende de módulos de características específicas y cualquier módulo compartido o reusable.
 
-    ![Modularity and Dependencies](https://raw.githubusercontent.com/johnpapa/angularjs-styleguide/master/assets/modularity-1.png)
+    ![Modularity and Dependencies](https://raw.githubusercontent.com/johnpapa/angular-styleguide/master/a1/assets/modularity-1.png)
 
     *¿Por qué?*: El módulo principal de la aplicación contiene un manifiesto rápidamente identificable de las características de la aplicación.
 
@@ -2431,7 +2436,7 @@ Las pruebas unitarias ayudan a mantener el código limpio, así que incluyo algu
     /* global sinon, describe, it, afterEach, beforeEach, expect, inject */
     ```
 
-  ![Testing Tools](https://raw.githubusercontent.com/johnpapa/angularjs-styleguide/master/assets/testing-tools.png)
+  ![Testing Tools](https://raw.githubusercontent.com/johnpapa/angular-styleguide/master/a1/assets/testing-tools.png)
 
 ### Organizando las Pruebas
 ###### [Style [Y197](#style-y197)]
@@ -2682,7 +2687,7 @@ Usa Plantillas o snippets para ayudarte a seguir estilos consistentes o patrones
 
   - Snippets de Angular que siguen estos estilos y directrices.
 
-    - Descarga los [snippets de Angular para Sublime](assets/sublime-angular-snippets.zip?raw=true)
+    - Descarga los [snippets de Angular para Sublime](../assets/sublime-angular-snippets?raw=true)
     - Colócalos en tu directorio de Packages
     - Reinicia Sublime
     - En un archivo de JavaScript escibe estos comandos seguidos de un `TAB`
