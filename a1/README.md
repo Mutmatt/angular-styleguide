@@ -1605,7 +1605,13 @@ While this guide explains the *what*, *why* and *how*, I find it helpful to see 
 ###### [Style [Y091](#style-y091)]
 
   - Use `$inject` to manually identify your dependencies for Angular components.
+  
+  - Origination ordering is `$` or `angular internals`, `external` dependencies, `hbc` `common` dependencies, and then `local` (if the dependency falls within an application).  These can be on the same line or line-break separated by type.  The latter 3 (`external`, `common`, `local`) is less strict but `$` dependencies should always take precedence over non-`$`
+  
+  - Dependencies should be alphabetized within their own origination.
 
+	*Why?*: By ordering our dependencies we create consistency and promote readability of the needed dependencies.
+	
     *Why?*: This technique mirrors the technique used by [`ng-annotate`](https://github.com/olov/ng-annotate), which I recommend for automating the creation of minification safe dependencies. If `ng-annotate` detects injection has already been made, it will not duplicate it.
 
     *Why?*: This safeguards your dependencies from being vulnerable to minification issues when parameters may be mangled. For example, `common` and `dataservice` may become `a` or `b` and not be found by Angular.
