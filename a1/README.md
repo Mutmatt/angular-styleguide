@@ -2767,9 +2767,7 @@ Unit testing helps maintain clean code, as such I included some of my recommenda
 
     *Why?*: Provides consistency across your team.
 
-    ```javascript
-    
-    ```
+    [.jshint](assets/.jshint)
 
 **[Back to top](#table-of-contents)**
 
@@ -2784,9 +2782,7 @@ Unit testing helps maintain clean code, as such I included some of my recommenda
 
     *Why?*: Provides consistency across your team.
 
-    ```javascript
-    
-    ```
+    [.jscs](assets/.jscs)
 
 **[Back to top](#table-of-contents)**
 
