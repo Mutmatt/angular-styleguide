@@ -2768,66 +2768,7 @@ Unit testing helps maintain clean code, as such I included some of my recommenda
     *Why?*: Provides consistency across your team.
 
     ```javascript
-    {
-        "bitwise": true,
-        "camelcase": true,
-        "curly": true,
-        "eqeqeq": true,
-        "esversion": 6,
-        "forin": true,
-        "freeze": true,
-        "immed": true,
-        "indent": 4,
-        "latedef": "nofunc",
-        "newcap": true,
-        "noarg": true,
-        "noempty": true,
-        "nonbsp": true,
-        "nonew": true,
-        "plusplus": false,
-        "quotmark": "single",
-        "undef": true,
-        "unused": false,
-        "strict": false,
-        "maxparams": 10,
-        "maxdepth": 5,
-        "maxstatements": 40,
-        "maxcomplexity": 8,
-        "maxlen": 120,
-        "asi": false,
-        "boss": false,
-        "debug": false,
-        "eqnull": true,
-        "esnext": false,
-        "evil": false,
-        "expr": false,
-        "funcscope": false,
-        "globalstrict": false,
-        "iterator": false,
-        "lastsemic": false,
-        "laxbreak": false,
-        "laxcomma": false,
-        "loopfunc": true,
-        "maxerr": 50,
-        "moz": false,
-        "multistr": false,
-        "notypeof": false,
-        "proto": false,
-        "scripturl": false,
-        "shadow": false,
-        "sub": true,
-        "supernew": false,
-        "validthis": false,
-        "noyield": false,
-
-        "browser": true,
-        "node": true,
-
-        "globals": {
-            "angular": false,
-            "$": false
-        }
-    }
+    
     ```
 
 **[Back to top](#table-of-contents)**
@@ -2844,80 +2785,7 @@ Unit testing helps maintain clean code, as such I included some of my recommenda
     *Why?*: Provides consistency across your team.
 
     ```javascript
-    {
-        "excludeFiles": ["node_modules/**", "bower_components/**"],
-
-        "requireCurlyBraces": [
-            "if",
-            "else",
-            "for",
-            "while",
-            "do",
-            "try",
-            "catch"
-        ],
-        "requireOperatorBeforeLineBreak": true,
-        "requireCamelCaseOrUpperCaseIdentifiers": true,
-        "maximumLineLength": {
-          "value": 100,
-          "allowComments": true,
-          "allowRegex": true
-        },
-        "validateIndentation": 4,
-        "validateQuoteMarks": "'",
-
-        "disallowMultipleLineStrings": true,
-        "disallowMixedSpacesAndTabs": true,
-        "disallowTrailingWhitespace": true,
-        "disallowSpaceAfterPrefixUnaryOperators": true,
-        "disallowMultipleVarDecl": null,
-
-        "requireSpaceAfterKeywords": [
-          "if",
-          "else",
-          "for",
-          "while",
-          "do",
-          "switch",
-          "return",
-          "try",
-          "catch"
-        ],
-        "requireSpaceBeforeBinaryOperators": [
-            "=", "+=", "-=", "*=", "/=", "%=", "<<=", ">>=", ">>>=",
-            "&=", "|=", "^=", "+=",
-
-            "+", "-", "*", "/", "%", "<<", ">>", ">>>", "&",
-            "|", "^", "&&", "||", "===", "==", ">=",
-            "<=", "<", ">", "!=", "!=="
-        ],
-        "requireSpaceAfterBinaryOperators": true,
-        "requireSpacesInConditionalExpression": true,
-        "requireSpaceBeforeBlockStatements": true,
-        "requireLineFeedAtFileEnd": true,
-        "disallowSpacesInsideObjectBrackets": "all",
-        "disallowSpacesInsideArrayBrackets": "all",
-        "disallowSpacesInsideParentheses": true,
-
-        "jsDoc": {
-            "checkAnnotations": true,
-            "checkParamNames": true,
-            "requireParamTypes": true,
-            "checkReturnTypes": true,
-            "checkTypes": true
-        },
-
-        "disallowMultipleLineBreaks": true,
-
-        "disallowCommaBeforeLineBreak": null,
-        "disallowDanglingUnderscores": null,
-        "disallowEmptyBlocks": null,
-        "disallowTrailingComma": null,
-        "requireCommaBeforeLineBreak": null,
-        "requireDotNotation": null,
-        "requireMultipleVarDecl": null,
-        "requireParenthesesAroundIIFE": true
-    }
+    
     ```
 
 **[Back to top](#table-of-contents)**
